@@ -35,10 +35,10 @@ resource "null_resource" "null" {
       source      = "week12b.pem"
       destination = "/tmp/w.pem"
     }
+
     depends_on = [aws_instance.name]
 
   }
-
 
 }
 
